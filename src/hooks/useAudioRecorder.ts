@@ -23,7 +23,7 @@ export function useAudioRecorder(): UseAudioRecorderReturn {
   const audioRef = useRef<HTMLAudioElement | null>(null);
   const chunksRef = useRef<Blob[]>([]);
   const startTimeRef = useRef<number>(0);
-  const intervalRef = useRef<NodeJS.Timeout | null>(null);
+  const intervalRef = useRef<number | null>(null); // changed from NodeJS.Timeout to number
 
   const startRecording = useCallback(async () => {
     try {

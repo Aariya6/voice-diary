@@ -1,3 +1,4 @@
+/* Ensure your build process uses Tailwind CSS to process these directives */
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
